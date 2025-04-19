@@ -23,7 +23,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.5 }}
             className="text-5xl md:text-7xl font-bold font-display mb-6 text-glow"
           >
-            Shubham Kumar
+            Chaiwala
           </motion.h1>
 
           <motion.div
