@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 33% 3%;
+    --foreground: 210 40% 98%;
+
+    --card: 240 33% 5%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 240 33% 5%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 196 86% 62%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 270 73% 46%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 240 20% 12%;
+    --muted-foreground: 240 10% 70%;
+
+    --accent: 273 73% 46%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 240 20% 20%;
+    --input: 240 20% 20%;
+    --ring: 196 86% 62%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-space-dark text-foreground font-sans;
+    background-image: radial-gradient(circle at 50% 50%, #0a0a19 0%, #050510 100%);
+  }
+
+  ::selection {
+    @apply bg-cosmic-blue/30 text-white;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px rgba(76, 201, 240, 0.5);
+  }
+
+  .border-glow {
+    box-shadow: 0 0 10px rgba(76, 201, 240, 0.3);
+  }
+
+  .star-field {
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
